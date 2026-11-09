@@ -25,7 +25,7 @@ Status values: `Done`, `In progress`, `Pending`.
 | 1.4 | Course information, step 4 | Done | `17816d4` |
 | 1.5 | Course information, step 5 | Done | `a30a483` |
 | 1.6 | Unicafe, step 1 | Done | uncommitted |
-| 1.7 | Unicafe, step 2 | Pending | — |
+| 1.7 | Unicafe, step 2 | Done | uncommitted |
 | 1.8 | Unicafe, step 3 | Pending | — |
 | 1.9 | Unicafe, step 4 | Pending | — |
 | 1.10 | Unicafe, step 5 | Pending | — |
