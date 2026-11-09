@@ -40,6 +40,7 @@ pnpm build
 
 ## Git
 
-- One commit per exercise or per exercise set.
+- Never run `git commit` or `git add`. The user commits manually.
+- Report changed files and suggest a Conventional Commits message in English instead.
 - Commit messages follow Conventional Commits, in English.
 - `dist/` and `node_modules/` are ignored; never add them.
