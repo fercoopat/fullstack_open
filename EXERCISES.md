@@ -19,12 +19,12 @@ Status values: `Done`, `In progress`, `Pending`.
 
 | Exercise | Title | Status | Commit |
 | --- | --- | --- | --- |
-| 1.1 | Course information, step 1 | Done | uncommitted |
-| 1.2 | Course information, step 2 | Done | uncommitted |
-| 1.3 | Course information, step 3 | Done | uncommitted |
-| 1.4 | Course information, step 4 | Done | uncommitted |
-| 1.5 | Course information, step 5 | Done | uncommitted |
-| 1.6 | Unicafe, step 1 | Pending | — |
+| 1.1 | Course information, step 1 | Done | `bd74dfe` |
+| 1.2 | Course information, step 2 | Done | `034585e` |
+| 1.3 | Course information, step 3 | Done | `1c8fe60` |
+| 1.4 | Course information, step 4 | Done | `17816d4` |
+| 1.5 | Course information, step 5 | Done | `a30a483` |
+| 1.6 | Unicafe, step 1 | Done | uncommitted |
 | 1.7 | Unicafe, step 2 | Pending | — |
 | 1.8 | Unicafe, step 3 | Pending | — |
 | 1.9 | Unicafe, step 4 | Pending | — |
