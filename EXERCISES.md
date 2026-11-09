@@ -23,7 +23,7 @@ Status values: `Done`, `In progress`, `Pending`.
 | 1.2 | Course information, step 2 | Done | uncommitted |
 | 1.3 | Course information, step 3 | Done | uncommitted |
 | 1.4 | Course information, step 4 | Done | uncommitted |
-| 1.5 | Course information, step 5 | Pending | — |
+| 1.5 | Course information, step 5 | Done | uncommitted |
 | 1.6 | Unicafe, step 1 | Pending | — |
 | 1.7 | Unicafe, step 2 | Pending | — |
 | 1.8 | Unicafe, step 3 | Pending | — |
