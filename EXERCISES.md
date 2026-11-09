@@ -32,4 +32,4 @@ Status values: `Done`, `In progress`, `Pending`.
 | 1.11 | Unicafe, step 6 | Done | uncommitted |
 | 1.12 | Anecdotes, step 1 | Done | uncommitted |
 | 1.13 | Anecdotes, step 2 | Done | uncommitted |
-| 1.14 | Anecdotes, step 3 | Pending | — |
+| 1.14 | Anecdotes, step 3 | Done | uncommitted |
