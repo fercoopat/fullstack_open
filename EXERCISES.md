@@ -27,7 +27,7 @@ Status values: `Done`, `In progress`, `Pending`.
 | 1.6 | Unicafe, step 1 | Done | uncommitted |
 | 1.7 | Unicafe, step 2 | Done | uncommitted |
 | 1.8 | Unicafe, step 3 | Done | uncommitted |
-| 1.9 | Unicafe, step 4 | Pending | — |
+| 1.9 | Unicafe, step 4 | Done | uncommitted |
 | 1.10 | Unicafe, step 5 | Pending | — |
 | 1.11 | Unicafe, step 6 | Pending | — |
 | 1.12 | Anecdotes, step 1 | Pending | — |
