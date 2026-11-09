@@ -38,18 +38,23 @@ Status values: `Done`, `In progress`, `Pending`.
 
 | Exercise | Title | Status | Commit |
 | --- | --- | --- | --- |
-| 2.1 | Course information, step 6 | Done | uncommitted |
-| 2.2 | Phonebook, step 1 | Pending | — |
-| 2.3 | Phonebook, step 2 | Pending | — |
-| 2.4 | Phonebook, step 3 | Pending | — |
-| 2.5 | Phonebook, step 4 | Pending | — |
-| 2.6 | Phonebook, step 5 | Pending | — |
-| 2.7 | Phonebook, step 6 | Pending | — |
-| 2.8 | Phonebook, step 7 | Pending | — |
-| 2.9 | Phonebook, step 8 | Pending | — |
-| 2.10 | Phonebook, step 9 | Pending | — |
-| 2.11 | Phonebook, step 10 | Pending | — |
-| 2.12 | Countries, step 1 | Pending | — |
-| 2.13 | Countries, step 2 | Pending | — |
-| 2.14 | Countries, step 3 | Pending | — |
-| 2.15 | Countries, step 4 | Pending | — |
+| 2.1 | Course information, step 6 | Done | `f348e99` |
+| 2.2 | Course information, step 7 | Done | `a6e0b0f` |
+| 2.3 | Course information, step 8 | Pending | — |
+| 2.4 | Course information, step 9 | Pending | — |
+| 2.5 | Separate module, step 10 | Pending | — |
+| 2.6 | Phonebook, step 1 | Pending | — |
+| 2.7 | Phonebook, step 2 | Pending | — |
+| 2.8 | Phonebook, step 3 | Pending | — |
+| 2.9 | Phonebook, step 4 | Pending | — |
+| 2.10 | Phonebook, step 5 | Pending | — |
+| 2.11 | Phonebook, step 6 | Pending | — |
+| 2.12 | Phonebook, step 7 | Pending | — |
+| 2.13 | Phonebook, step 8 | Pending | — |
+| 2.14 | Phonebook, step 9 | Pending | — |
+| 2.15 | Phonebook, step 10 | Pending | — |
+| 2.16 | Phonebook, step 11 | Pending | — |
+| 2.17 | Phonebook, step 12 | Pending | — |
+| 2.18 | Data for countries, step 1 | Pending | — |
+| 2.19 | Data for countries, step 2 | Pending | — |
+| 2.20 | Data for countries, step 3 | Pending | — |
