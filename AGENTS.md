@@ -5,7 +5,8 @@ Exercise repository for Full Stack Open. Each part is a standalone application.
 ## Layout
 
 - `part0/`: Mermaid sequence diagrams, named `diagram_<exercise>.md`.
-- `part1/`: React + Vite application. Source code lives in `part1/src/`.
+- `part1/`: React + Vite application, exercises 1.1 to 1.14. Source code lives in `part1/src/`.
+- `part2/`: React + Vite application, exercises 2.1 onwards. Source code lives in `part2/src/`.
 - New parts: create `partN/` with its own `package.json`.
 
 ## Language

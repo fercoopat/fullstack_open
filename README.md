@@ -8,6 +8,7 @@ Exercises for the [Full Stack Open](https://fullstackopen.com/) course by the Un
 | --- | --- |
 | `part0/` | Sequence diagrams for the exercises (Mermaid) |
 | `part1/` | React + Vite application, exercises 1.1 onwards |
+| `part2/` | React + Vite application, exercises 2.1 onwards |
 
 Each part is an independent project with its own `package.json` and `node_modules`.
 
