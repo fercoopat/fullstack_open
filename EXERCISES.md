@@ -43,8 +43,8 @@ Status values: `Done`, `In progress`, `Pending`.
 | 2.3 | Course information, step 8 | Done | `a6e0b0f` |
 | 2.4 | Course information, step 9 | Done | `ba788a5` |
 | 2.5 | Separate module, step 10 | Done | `0047d86` |
-| 2.6 | Phonebook, step 1 | Done | uncommitted |
-| 2.7 | Phonebook, step 2 | Pending | — |
+| 2.6 | Phonebook, step 1 | Done | `1483728` |
+| 2.7 | Phonebook, step 2 | Done | uncommitted |
 | 2.8 | Phonebook, step 3 | Pending | — |
 | 2.9 | Phonebook, step 4 | Pending | — |
 | 2.10 | Phonebook, step 5 | Pending | — |
