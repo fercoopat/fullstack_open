@@ -17,7 +17,7 @@ Exercise repository for Full Stack Open. Each part is a standalone application.
 ## Conventions
 
 - Package manager: `pnpm`. Never generate `package-lock.json`.
-- React components live in `src/App.jsx` unless the exercise requires separate files.
+- React components live in `src/App.jsx` unless the exercise requires separate files. From exercise 2.5 on, `part2/` keeps components in `src/components/`, one file per component or module.
 - No CSS files or assets by default. The course requires removing `App.css`, `index.css`, and `src/assets/`.
 - `main.jsx` only mounts `App` into `#root`.
 - Semicolons and single quotes, consistent with `part1/src/App.jsx`.
