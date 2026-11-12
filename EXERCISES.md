@@ -46,8 +46,8 @@ Status values: `Done`, `In progress`, `Pending`.
 | 2.6 | Phonebook, step 1 | Done | `1483728` |
 | 2.7 | Phonebook, step 2 | Done | `935dd57` |
 | 2.8 | Phonebook, step 3 | Done | `a5fd050` |
-| 2.9 | Phonebook, step 4 | Done | uncommitted |
-| 2.10 | Phonebook, step 5 | Pending | — |
+| 2.9 | Phonebook, step 4 | Done | `8dd70f2` |
+| 2.10 | Phonebook, step 5 | Done | uncommitted |
 | 2.11 | Phonebook, step 6 | Pending | — |
 | 2.12 | Phonebook, step 7 | Pending | — |
 | 2.13 | Phonebook, step 8 | Pending | — |
