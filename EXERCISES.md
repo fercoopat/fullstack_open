@@ -56,5 +56,5 @@ Status values: `Done`, `In progress`, `Pending`.
 | 2.16 | Phonebook, step 11 | Done | `dec7e1d` |
 | 2.17 | Phonebook, step 12 | Done | `d290bb6` |
 | 2.18 | Data for countries, step 1 | Done | `0ce09fa` |
-| 2.19 | Data for countries, step 2 | Done | uncommitted |
-| 2.20 | Data for countries, step 3 | Pending | — |
+| 2.19 | Data for countries, step 2 | Done | `d4bb0f5` |
+| 2.20 | Data for countries, step 3 | Done | uncommitted |
