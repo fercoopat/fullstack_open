@@ -6,6 +6,7 @@ React + Vite application for part 2 of [Full Stack Open](../README.md).
 
 ```bash
 pnpm install
+pnpm server   # json-server on http://localhost:3001, data in db.json
 pnpm dev
 ```
 
