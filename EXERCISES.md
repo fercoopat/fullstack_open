@@ -63,7 +63,7 @@ Status values: `Done`, `In progress`, `Pending`.
 
 | Exercise | Title | Status | Commit |
 | --- | --- | --- | --- |
-| 3.1 | Phonebook backend, step 1 | Pending | — |
+| 3.1 | Phonebook backend, step 1 | Done | uncommitted |
 | 3.2 | Phonebook backend, step 2 | Pending | — |
 | 3.3 | Phonebook backend, step 3 | Pending | — |
 | 3.4 | Phonebook backend, step 4 | Pending | — |
