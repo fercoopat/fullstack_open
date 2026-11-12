@@ -10,7 +10,7 @@ const App = () => {
   const [newName, setNewName] = useState('');
   const [newNumber, setNewNumber] = useState('');
   const [filter, setFilter] = useState('');
-  const [message, setMessage] = useState(null);
+  const [notification, setNotification] = useState(null);
 
   useEffect(() => {
     personService.getAll().then((initialPersons) => {
@@ -18,10 +18,10 @@ const App = () => {
     });
   }, []);
 
-  const notify = (text) => {
-    setMessage(text);
+  const notify = (text, type = 'success') => {
+    setNotification({ text, type });
     setTimeout(() => {
-      setMessage(null);
+      setNotification(null);
     }, 5000);
   };
 
@@ -53,16 +53,27 @@ const App = () => {
 
       const changedPerson = { ...existingPerson, number: newNumber };
 
-      personService.update(existingPerson.id, changedPerson).then((returnedPerson) => {
-        setPersons(
-          persons.map((person) =>
-            person.id === existingPerson.id ? returnedPerson : person,
-          ),
-        );
-        setNewName('');
-        setNewNumber('');
-        notify(`Updated ${returnedPerson.name}`);
-      });
+      personService
+        .update(existingPerson.id, changedPerson)
+        .then((returnedPerson) => {
+          setPersons(
+            persons.map((person) =>
+              person.id === existingPerson.id ? returnedPerson : person,
+            ),
+          );
+          setNewName('');
+          setNewNumber('');
+          notify(`Updated ${returnedPerson.name}`);
+        })
+        .catch(() => {
+          setPersons(
+            persons.filter((person) => person.id !== existingPerson.id),
+          );
+          notify(
+            `Information of ${existingPerson.name} has already been removed from server`,
+            'error',
+          );
+        });
 
       return;
     }
@@ -79,9 +90,19 @@ const App = () => {
 
   const handleDelete = (id, name) => {
     if (window.confirm(`Delete ${name}?`)) {
-      personService.remove(id).then(() => {
-        setPersons(persons.filter((person) => person.id !== id));
-      });
+      personService
+        .remove(id)
+        .then(() => {
+          setPersons(persons.filter((person) => person.id !== id));
+          notify(`Deleted ${name}`);
+        })
+        .catch(() => {
+          setPersons(persons.filter((person) => person.id !== id));
+          notify(
+            `Information of ${name} has already been removed from server`,
+            'error',
+          );
+        });
     }
   };
 
@@ -93,7 +114,7 @@ const App = () => {
     <div>
       <h2>Phonebook</h2>
 
-      <Notification message={message} />
+      <Notification notification={notification} />
 
       <Filter value={filter} onChange={handleFilterChange} />
 

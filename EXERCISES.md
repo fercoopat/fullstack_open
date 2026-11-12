@@ -53,8 +53,8 @@ Status values: `Done`, `In progress`, `Pending`.
 | 2.13 | Phonebook, step 8 | Done | `e052612` |
 | 2.14 | Phonebook, step 9 | Done | `1d09811` |
 | 2.15 | Phonebook, step 10 | Done | `779b913` |
-| 2.16 | Phonebook, step 11 | Done | uncommitted |
-| 2.17 | Phonebook, step 12 | Pending | — |
+| 2.16 | Phonebook, step 11 | Done | `dec7e1d` |
+| 2.17 | Phonebook, step 12 | Done | uncommitted |
 | 2.18 | Data for countries, step 1 | Pending | — |
 | 2.19 | Data for countries, step 2 | Pending | — |
 | 2.20 | Data for countries, step 3 | Pending | — |
