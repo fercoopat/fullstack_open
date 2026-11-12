@@ -1,136 +1,47 @@
 import { useEffect, useState } from 'react';
-import personService from './services/persons';
-import Filter from './components/Filter';
-import Notification from './components/Notification';
-import PersonForm from './components/PersonForm';
-import Persons from './components/Persons';
+import axios from 'axios';
+import Country from './components/Country';
 
 const App = () => {
-  const [persons, setPersons] = useState([]);
-  const [newName, setNewName] = useState('');
-  const [newNumber, setNewNumber] = useState('');
-  const [filter, setFilter] = useState('');
-  const [notification, setNotification] = useState(null);
+  const [countries, setCountries] = useState([]);
+  const [query, setQuery] = useState('');
 
   useEffect(() => {
-    personService.getAll().then((initialPersons) => {
-      setPersons(initialPersons);
-    });
+    axios
+      .get('https://studies.cs.helsinki.fi/restcountries/api/all')
+      .then((response) => {
+        setCountries(response.data);
+      });
   }, []);
 
-  const notify = (text, type = 'success') => {
-    setNotification({ text, type });
-    setTimeout(() => {
-      setNotification(null);
-    }, 5000);
+  const handleQueryChange = (event) => {
+    setQuery(event.target.value);
   };
 
-  const handleNameChange = (event) => {
-    setNewName(event.target.value);
-  };
-
-  const handleNumberChange = (event) => {
-    setNewNumber(event.target.value);
-  };
-
-  const handleFilterChange = (event) => {
-    setFilter(event.target.value);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    const existingPerson = persons.find((person) => person.name === newName);
-
-    if (existingPerson) {
-      const replace = window.confirm(
-        `${newName} is already added to phonebook, replace the old number with a new one?`,
-      );
-
-      if (!replace) {
-        return;
-      }
-
-      const changedPerson = { ...existingPerson, number: newNumber };
-
-      personService
-        .update(existingPerson.id, changedPerson)
-        .then((returnedPerson) => {
-          setPersons(
-            persons.map((person) =>
-              person.id === existingPerson.id ? returnedPerson : person,
-            ),
-          );
-          setNewName('');
-          setNewNumber('');
-          notify(`Updated ${returnedPerson.name}`);
-        })
-        .catch(() => {
-          setPersons(
-            persons.filter((person) => person.id !== existingPerson.id),
-          );
-          notify(
-            `Information of ${existingPerson.name} has already been removed from server`,
-            'error',
-          );
-        });
-
-      return;
-    }
-
-    const personObject = { name: newName, number: newNumber };
-
-    personService.create(personObject).then((returnedPerson) => {
-      setPersons(persons.concat(returnedPerson));
-      setNewName('');
-      setNewNumber('');
-      notify(`Added ${returnedPerson.name}`);
-    });
-  };
-
-  const handleDelete = (id, name) => {
-    if (window.confirm(`Delete ${name}?`)) {
-      personService
-        .remove(id)
-        .then(() => {
-          setPersons(persons.filter((person) => person.id !== id));
-          notify(`Deleted ${name}`);
-        })
-        .catch(() => {
-          setPersons(persons.filter((person) => person.id !== id));
-          notify(
-            `Information of ${name} has already been removed from server`,
-            'error',
-          );
-        });
-    }
-  };
-
-  const personsToShow = persons.filter((person) =>
-    person.name.toLowerCase().includes(filter.toLowerCase()),
+  const matches = countries.filter((country) =>
+    country.name.common.toLowerCase().includes(query.toLowerCase()),
   );
+
+  let content;
+
+  if (matches.length > 10) {
+    content = <p>Too many matches, specify another filter</p>;
+  } else if (matches.length > 1) {
+    content = (
+      <ul>
+        {matches.map((country) => (
+          <li key={country.cca3}>{country.name.common}</li>
+        ))}
+      </ul>
+    );
+  } else if (matches.length === 1) {
+    content = <Country country={matches[0]} />;
+  }
 
   return (
     <div>
-      <h2>Phonebook</h2>
-
-      <Notification notification={notification} />
-
-      <Filter value={filter} onChange={handleFilterChange} />
-
-      <h3>Add a new</h3>
-
-      <PersonForm
-        onSubmit={handleSubmit}
-        name={newName}
-        onNameChange={handleNameChange}
-        number={newNumber}
-        onNumberChange={handleNumberChange}
-      />
-
-      <h3>Numbers</h3>
-
-      <Persons persons={personsToShow} onDelete={handleDelete} />
+      find countries <input value={query} onChange={handleQueryChange} />
+      {content}
     </div>
   );
 };
