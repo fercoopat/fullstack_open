@@ -57,4 +57,31 @@ Status values: `Done`, `In progress`, `Pending`.
 | 2.17 | Phonebook, step 12 | Done | `d290bb6` |
 | 2.18 | Data for countries, step 1 | Done | `0ce09fa` |
 | 2.19 | Data for countries, step 2 | Done | `d4bb0f5` |
-| 2.20 | Data for countries, step 3 | Done | uncommitted |
+| 2.20 | Data for countries, step 3 | Done | `12d62e3` |
+
+## Part 3: Programming a server with NodeJS and Express
+
+| Exercise | Title | Status | Commit |
+| --- | --- | --- | --- |
+| 3.1 | Phonebook backend, step 1 | Pending | — |
+| 3.2 | Phonebook backend, step 2 | Pending | — |
+| 3.3 | Phonebook backend, step 3 | Pending | — |
+| 3.4 | Phonebook backend, step 4 | Pending | — |
+| 3.5 | Phonebook backend, step 5 | Pending | — |
+| 3.6 | Phonebook backend, step 6 | Pending | — |
+| 3.7 | Phonebook backend, step 7 | Pending | — |
+| 3.8 | Phonebook backend, step 8 | Pending | — |
+| 3.9 | Phonebook backend, step 9 | Pending | — |
+| 3.10 | Phonebook backend, step 10 | Pending | — |
+| 3.11 | Phonebook full stack | Pending | — |
+| 3.12 | Command-line database | Pending | — |
+| 3.13 | Phonebook database, step 1 | Pending | — |
+| 3.14 | Phonebook database, step 2 | Pending | — |
+| 3.15 | Phonebook database, step 3 | Pending | — |
+| 3.16 | Phonebook database, step 4 | Pending | — |
+| 3.17 | Phonebook database, step 5 | Pending | — |
+| 3.18 | Phonebook database, step 6 | Pending | — |
+| 3.19 | Phonebook database, step 7 | Pending | — |
+| 3.20 | Phonebook database, step 8 | Pending | — |
+| 3.21 | Deploying the database backend to production | Pending | — |
+| 3.22 | Lint configuration | Pending | — |
