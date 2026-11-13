@@ -67,8 +67,8 @@ Status values: `Done`, `In progress`, `Pending`.
 | 3.2 | Phonebook backend, step 2 | Done | `b3540d9` |
 | 3.3 | Phonebook backend, step 3 | Done | `f0a3837` |
 | 3.4 | Phonebook backend, step 4 | Done | `2255291` |
-| 3.5 | Phonebook backend, step 5 | Done | uncommitted |
-| 3.6 | Phonebook backend, step 6 | Pending | — |
+| 3.5 | Phonebook backend, step 5 | Done | `93b888c` |
+| 3.6 | Phonebook backend, step 6 | Done | uncommitted |
 | 3.7 | Phonebook backend, step 7 | Pending | — |
 | 3.8 | Phonebook backend, step 8 | Pending | — |
 | 3.9 | Phonebook backend, step 9 | Pending | — |
